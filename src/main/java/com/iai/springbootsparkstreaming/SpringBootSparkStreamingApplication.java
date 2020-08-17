@@ -3,6 +3,7 @@ package com.iai.springbootsparkstreaming;
 import com.iai.springbootsparkstreaming.model.Product;
 import com.iai.springbootsparkstreaming.services.ProductService;
 import com.iai.springbootsparkstreaming.spark.services.EtlService;
+import com.iai.springbootsparkstreaming.spark.services.WebSocketService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -18,7 +19,7 @@ public class SpringBootSparkStreamingApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(SpringBootSparkStreamingApplication.class, args);
-//        context.getBean(EtlService.class).start();
+        context.getBean(EtlService.class).start();
     }
 
 }

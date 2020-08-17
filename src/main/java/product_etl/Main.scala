@@ -23,8 +23,8 @@ object Main {
     ssc.awaitTermination()
   }
 
-  def productId2Price(id:Int):Int={
-    val map=Map(1->100,2->200,4->500)
+  def productId2Price(id:Long):Int={
+    val map=Map(1L->100,2->200,4->500)
     map.getOrElse(id,50)
 
   }

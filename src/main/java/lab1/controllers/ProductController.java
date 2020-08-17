@@ -2,6 +2,7 @@ package lab1.controllers;
 
 import lab1.model.Item;
 import lab1.model.ItemDao;
+import org.apache.spark.SparkContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
